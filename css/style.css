@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    background-color: #F6D4F5;
+    margin-bottom: 10px;
+}
+
+main{
+    margin: auto;
+    width: 70%;
+    padding-top: 10px;
+}
+
+footer{
+    background-color:#ecd4f6; 
+    transition: all;
+    
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+}
+
+span{
+    font-size: small;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: all;
+}
+a .card_titre:hover{
+    cursor: pointer;
+    color: blueviolet;
+    transition-duration: 0.2s;
+    transition:ease
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+h2{
+    font-size: 20px;
+}
+
+h3{
+    font-family: 'Courgette', cursive;
+    margin-top: 5px;
+   font-size: 20px;
+    justify-content: center;
+}
+
+
+
+.slider {
+   height: 700px; 
+    background-image: url('../img/escarpin1.jpg');
+    margin: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 5px rgba(0,0, 0, 0.1);
+    background-size: cover;
+}
+
+
+
+/*---------SELECTEURS-------*/
+
+.bg-white{
+    padding: 10px;
+}
+
+.margin{
+    margin-right: -20px;
+    margin-left: -20px;
+}
+
+/*---------HEADER---------*/
+
+.fa{
+    color: rgb(238, 144, 160);
+}
+
+.nav_hover:hover{
+    background-color: rgb(53, 50, 50);
+    color: white;
+    transition:all 0.1s ease 0s;
+}
+
+/*--------MAIN--------*/
+
+/*--section 1--*/
+
+.encadre{
+    position: absolute;
+    background-color: #F6D4F5;
+   opacity: 0.8;
+   padding-right: 30px;
+}
+
+/*--section 2--*/
+
+.container_escarpin{
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.img-esc{
+    width: 90px;
+    align-items: center;
+}
+
+/*--section 3--*/
+
+.card{
+    box-shadow: 0 0 5px rgba(0,0, 0, 0.1);
+}
+
+.card_title{
+    padding: 5px 25px;
+    margin: 8px;
+    text-align:center;
+    color: white;
+    font-size: 15px;
+}
+
+.logo4{
+    width: 20px;
+    margin: 5px;
+    margin-top: 3px;
+}
+
+.card-img-top{
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+.fushia{
+    background-color: rgb(255, 20, 204);
+}
+.green{
+    background-color: rgb(104, 168, 40);
+}
+.blue{
+    background-color: cornflowerblue;
+}
+
+#select article {
+    transition: ease 0.2s;
+}
+
+#select:hover article{
+    opacity: 0.5;
+}
+
+#select article:hover{
+    opacity: 1;
+}
+
+/*---------FOOTER---------*/
+
+.pink{
+    background-color: pink; 
+    padding: 13px;  
+}
+footer:hover{
+    color: white;
+    cursor: default;
+}
+
+
+
+
+
+@media (max-width: 640px){ /*---MEDIA QUERIES (640px)---*/
+
+h1{
+    text-align: center;
+}
+
+/*------HEADER------*/
+
+.container_caddie{
+    visibility: hidden;
+  display: none;
+}
+
+.container_nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.groupe{
+    display: inline;
+    width: 100%;
+   justify-content: center;
+   align-items: center;
+}
+
+/*------MAIN------*/
+/*--section 1--*/
+.encadre{
+    position: inherit;
+    max-height: 18vh;
+    text-align: center;
+    margin: 5px;
+    clear: both;
+}
+
+.slider{
+    height: 300px; 
+}
+
+/*--section 2--*/
+.container_escarpin{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+/*--section 3--*/
+.card{
+    margin: auto;
+}
+
+.card-img-top{
+    width: 100%;
+}
+
+/*------FOOTER------*/
+
+.container_footer_top{
+    flex: none;
+    display: inline;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bottombar{
+     display: flex;
+    flex-direction: column;
+}
+
+.article_bottombar{
+     width: 100%;
+}
+
+
+
+
+
+}
+
+
+    
